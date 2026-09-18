@@ -92,3 +92,9 @@ dados (JSON)
    ↓ salvos com useState
 componente renderiza
 ```
+
+
+## Integrantes:
+
+Gustavo Basso RM: 572623
+Guilherme Sales RM: 572933
