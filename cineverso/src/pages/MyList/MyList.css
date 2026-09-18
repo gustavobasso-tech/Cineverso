@@ -1,0 +1,38 @@
+.minha-lista {
+  padding: 40px;
+}
+
+.minha-lista-titulo {
+  font-family: var(--fonte-titulo);
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.minha-lista-secao {
+  margin-bottom: 44px;
+}
+
+.minha-lista-secao h2 {
+  font-family: var(--fonte-titulo);
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 18px;
+}
+
+.minha-lista-grade {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 26px 18px;
+}
+
+@media (max-width: 600px) {
+  .minha-lista {
+    padding: 28px 20px;
+  }
+
+  .minha-lista-grade {
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 22px 14px;
+  }
+}

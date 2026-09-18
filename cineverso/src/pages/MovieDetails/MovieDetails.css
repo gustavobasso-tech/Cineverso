@@ -1,0 +1,128 @@
+.detalhes {
+  position: relative;
+  min-height: 80vh;
+}
+
+.detalhes-fundo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 520px;
+
+  background-size: cover;
+  background-position: center;
+  opacity: 0.35;
+
+    mask-image: linear-gradient(to bottom, black 10%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black 10%, transparent 100%);
+}
+
+.detalhes-conteudo {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 32px 40px 60px;
+}
+
+.detalhes-corpo {
+  display: flex;
+  gap: 36px;
+  margin-top: 32px;
+}
+
+.detalhes-poster {
+  flex: 0 0 280px;
+  width: 280px;
+  border-radius: 12px;
+  border: 1px solid var(--cor-borda);
+}
+
+.detalhes-titulo {
+  font-family: var(--fonte-titulo);
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.detalhes-dados {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px;
+  margin-top: 14px;
+  color: var(--cor-texto-suave);
+  font-size: 14px;
+}
+
+.detalhes-nota {
+  padding: 3px 10px;
+  border-radius: 6px;
+  background-color: var(--cor-superficie);
+  color: var(--cor-destaque);
+  font-weight: 600;
+}
+
+.detalhes-generos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 18px;
+}
+
+.detalhes-genero {
+  padding: 5px 12px;
+  border: 1px solid var(--cor-borda);
+  border-radius: 999px;
+  font-size: 13px;
+  color: var(--cor-texto-suave);
+}
+
+.detalhes-subtitulo {
+  margin-top: 28px;
+  margin-bottom: 8px;
+  font-family: var(--fonte-titulo);
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.detalhes-sinopse {
+  max-width: 62ch;
+  color: var(--cor-texto-suave);
+  line-height: 1.7;
+}
+
+@media (max-width: 800px) {
+  .detalhes-corpo {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .detalhes-poster {
+    flex: none;
+    width: 200px;
+  }
+
+  .detalhes-titulo {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 600px) {
+  .detalhes-conteudo {
+    padding: 24px 20px 48px;
+  }
+}
+
+.detalhes-acoes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 24px;
+}
+
+.detalhes-acao-ativa {
+  background-color: var(--cor-destaque);
+  border: 1px solid var(--cor-destaque);
+  color: #1a1204;
+}
